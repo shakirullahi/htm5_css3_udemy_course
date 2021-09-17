@@ -79,6 +79,19 @@ p{
     clear: both;
 }
 
+/* Padding */
+.py-1 { padding: 10px 0;}
+.py-2 { padding: 20px 0;}
+.py-3 { padding: 30px 0;}
+
+/* Margin */
+.my-3 { margin: 30px 0;}
+
+/* Heading */
+.l-heading {
+    font-size: 2em;
+}
+
 /* Navbar */
 #navbar {
     background-color: #444;
@@ -182,6 +195,58 @@ p{
     margin-bottom: 10px;
 }
 
+/* About Info */
+#about-info .info-right {
+    float: right;
+    width: 50%;
+    min-height: 100%;
+
+}
+
+#about-info .info-right img{
+    display: block;
+    width: 70%;
+    margin: auto;
+    border-radius: 50%;
+}
+
+
+#about-info .info-left {
+    float: left;
+    width: 50%;
+    min-height: 100%;
+
+}
+
+/* Testimonials */
+#testimonials {
+    background:url('../img/test-bg.jpg');
+}
+
+#testimonials h2{
+    color:#fff;
+    text-align: center;
+}
+
+#testimonials .testimonail{
+    padding: 20px;
+    overflow: auto;
+}
+
+#testimonials .testimonail img{
+    float: left;
+    display: block;
+    width: 10%;
+    margin: auto;
+    border-radius: 50%;
+}
+
+
+#testimonials .testimonail p{
+    float: right;
+    width: 90%;
+    padding:0 20px;
+}
 /* Main Footer */
 #main-footer{
     text-align: center;

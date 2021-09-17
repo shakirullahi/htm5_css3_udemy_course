@@ -27,3 +27,14 @@ display: none;
     width: 100%;
 }
 
+/* Features */
+
+#features{
+    height: auto;
+    overflow: auto;
+}
+.box{
+    height: auto;
+    float: none;
+    width: 100%;
+}

@@ -138,3 +138,26 @@ img {
 .cases img:hover {
     opacity: 0.7;
 }
+
+/* Contact */
+.contact form {
+    width: 100%;
+}
+
+.contact form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    /* border: 1px solid #c2c2c2; */
+    margin-bottom: 20px;
+}
+
+.contact form button {
+    width: 100%;
+}
+
+
+.callback-form input:focus {
+    outline-color: #28a745;
+}

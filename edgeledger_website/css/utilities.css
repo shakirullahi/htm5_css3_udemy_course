@@ -34,12 +34,14 @@
     color: #fff;
 }
 
-.btn-dark {
+.btn-dark, 
+.bg-dark {
     background: #333;
     color: #fff;
 }
 
-.btn-light {
+.btn-light,
+.bg-light {
     background: #f4f4f4;
     color: #333;
 }

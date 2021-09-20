@@ -120,3 +120,14 @@
     background: #28a745;
     color: #fff;
 }
+
+/* Section Header */
+
+.section-header {
+    padding:40px;
+    text-align: center;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+}

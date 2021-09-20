@@ -63,6 +63,10 @@
     padding: 20px;
 }
 
+.flex-items img {
+    border-radius: 50%;
+}
+
 /* Flex Columns */
 .flex-columns.flex-reverse .row {
     flex-direction: row-reverse;

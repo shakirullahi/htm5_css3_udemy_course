@@ -64,6 +64,9 @@
 }
 
 /* Flex Columns */
+.flex-columns.flex-reverse .row {
+    flex-direction: row-reverse;
+}
 .flex-columns .row {
     display: flex;
     flex-direction: row;
@@ -118,6 +121,11 @@
  
 .bg-primary {
     background: #28a745;
+    color: #fff;
+}
+
+.bg-secondary {
+    background: #0284d0;
     color: #fff;
 }
 

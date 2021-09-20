@@ -161,3 +161,22 @@ img {
 .callback-form input:focus {
     outline-color: #28a745;
 }
+
+/* Footerr */
+.footer {
+    text-align: center;
+    padding: 40px;
+}
+
+/* Social */
+#social a {
+    padding: 0 20px;
+}
+
+#social i:hover {
+    color:#28a745;
+}
+
+#social i{
+    color: #fff;
+}

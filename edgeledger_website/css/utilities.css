@@ -44,6 +44,10 @@
     color: #333;
 }
 
+.btn-outline {
+    border: 1px solid #f4f4f4;
+}
+
 
 /* Flex Items */
 .flex-items {
@@ -57,4 +61,62 @@
 
 .flex-items > div {
     padding: 20px;
+}
+
+/* Flex Columns */
+.flex-columns .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.flex-columns .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex:1;
+}
+
+.flex-columns .column .column-1,
+.flex-columns .column .column-2 {
+    height: 100%;
+}
+
+.flex-columns img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flex-columns .column-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding:30px;
+}
+
+.flex-columns h2 {
+    font-size: 2.5rem;
+}
+
+/* Margins and paadings */
+.my-1 {
+    margin-bottom: 10px;
+}
+
+.my-2 {
+    margin-bottom: 20px;
+}
+
+.my-3 {
+    margin-bottom: 30px;
+}
+
+/* Background */
+ 
+.bg-primary {
+    background: #28a745;
+    color: #fff;
 }

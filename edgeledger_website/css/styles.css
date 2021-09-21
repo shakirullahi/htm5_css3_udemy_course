@@ -208,3 +208,9 @@ img {
         width: 70%;
     }
 }
+
+/* Blog */
+.hero.blog {
+    background: url("../images/home/blog.jpg") no-repeat center center/cover ;
+    height: 30vh;
+}

@@ -180,3 +180,18 @@ img {
 #social i{
     color: #fff;
 }
+
+
+/* Mobiel */
+@media (max-width:768px) {
+    .navbar {
+        flex-direction: column;
+        height: 120px;
+        padding: 20px;
+    }
+
+    .navbar a {
+        padding: 10px 10px;
+        margin: 0 3px;
+    }
+}

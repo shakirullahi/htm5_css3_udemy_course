@@ -3,9 +3,14 @@
   --secondary-color: #f4f4f4;
 }
 
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f3f3f3;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.7;
 }
@@ -28,4 +33,80 @@ body {
 h1 {
   text-align: center;
   font-size: 3rem;
+}
+
+#navbar ul {
+  list-style: none;
+}
+
+#navbar ul li {
+  color: #333;
+  display: inline-block;
+  padding: 1rem;
+  position: relative;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Hide nested */
+#navbar ul li ul {
+  display: none;
+  position: absolute;
+  left: 0;
+
+  /* border: 1px solid red; */
+  width: 200px;
+  z-index: 1;
+  background: var(--secondary-color);
+}
+
+#navbar ul li ul li {
+  padding: 10px 20px;
+  border-bottom: 1px solid #c3c3c3;
+  width: 100%;
+}
+
+#navbar ul li:hover {
+  cursor: pointer;
+  background: coral;
+  color: #fff;
+}
+
+#navbar ul li:hover > ul {
+  display: block;
+}
+
+#navbar ul li:hover > ul li {
+  display: block;
+  background: #e7e7e7;
+  color: #333;
+}
+
+#navbar ul li:hover > ul li:hover {
+  background: #e0e0e0;
+}
+
+#navbar ul li:hover > ul li span {
+  color: #fff;
+  background: coral;
+  padding: 2px;
+  border-radius: 3px;
+  position: absolute;
+  display: inline-block;
+  right: 10px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  #navbar ul li {
+    display: block;
+  }
+
+  #navbar ul li:hover ul {
+    width: 100%;
+    position: relative;
+  }
 }

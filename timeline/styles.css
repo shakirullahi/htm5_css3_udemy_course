@@ -14,7 +14,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.7;
   background: var(--primary-color);
-  overflow: hidden;
+  /* overflow: hidden; */
   color: #fff;
   padding-bottom: 50px;
 }
@@ -65,16 +65,30 @@ h2 {
   padding: 20px;
   background: var(--secondary-color);
   transition: all 0.5s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
 }
 
 /* left */
 #timeline ul li:nth-child(odd) div {
+  transform: translateX(200px);
   left: 40px;
 }
 
 /* right */
 #timeline ul li:nth-child(even) div {
+  transform: translateX(-200px);
   left: -434px;
+}
+
+#timeline ul li.show > div {
+  visibility: visible;
+  opacity: 1;
+  transform: none;
+}
+
+#timeline ul li.show:after {
+  background: var(--secondary-color);
 }
 
 /* dots */
@@ -90,6 +104,8 @@ h2 {
   border-radius: 50%;
 }
 
+/* arrow right */
+
 #timeline ul li:nth-child(odd) div::before {
   content: "";
   position: absolute;
@@ -98,10 +114,11 @@ h2 {
   height: 0px;
   left: 0px;
   border: solid 20px transparent;
-  border-right: solid 20px #fff;
+  border-right: solid 20px var(--secondary-color);
   transform: translateX(-40px);
 }
 
+/* arrow left */
 #timeline ul li:nth-child(even) div::before {
   content: "";
   position: absolute;
@@ -110,7 +127,7 @@ h2 {
   height: 0px;
   right: 0;
   border: solid 20px transparent;
-  border-left: solid 20px #fff;
+  border-left: solid 20px var(--secondary-color);
   transform: translateX(40px);
 }
 

@@ -1,0 +1,22 @@
+{
+  "name": "html5_css3",
+  "version": "1.0.0",
+  "description": "Repo created to practice the course learning and showcase my projects.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w sass/scss/ -o sass/dist/css --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shakirullahi/htm5_css3_udemy_course.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shakirullahi/htm5_css3_udemy_course/issues"
+  },
+  "homepage": "https://github.com/shakirullahi/htm5_css3_udemy_course#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

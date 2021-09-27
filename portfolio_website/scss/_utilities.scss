@@ -101,3 +101,24 @@ input[class^="btn-"]:hover {
   display: block;
   margin: 0 auto 1rem auto;
 }
+
+// background colors
+
+.bg {
+  &-main {
+    background-color: $main-color;
+    color: set-text-color($main-color);
+  }
+  &-dark {
+    background-color: $dark-color;
+    color: set-text-color($dark-color);
+  }
+  &-light {
+    background-color: $light-color;
+    color: set-text-color($light-color);
+  }
+  &-medium {
+    background-color: $medium-color;
+    color: set-text-color($medium-color);
+  }
+}

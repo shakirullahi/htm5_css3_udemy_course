@@ -10,7 +10,7 @@ $bg-img: url(../img/showcase.jpg);
 // Set text color
 
 @function set-text-color($color) {
-  @if (lighness($color) > 50) {
+  @if (lightness($color) > 50) {
     @return #000;
   } @else {
     @return #fff;

@@ -4,8 +4,54 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/main.css" />
     <title>Portfolio</title>
   </head>
-  <body></body>
+  <body>
+    <!-- Header -->
+    <header id="header-home">
+      <div class="container">
+        <nav id="main-nav">
+          <img src="img/logo.png" alt="Logo" id="logo" />
+
+          <ul>
+            <li><a class="current" href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-content">
+          <h1>
+            I am John The
+            <span
+              class="txt-type"
+              data-wait="3000"
+              data-words='["Full stack dev", "Front end dev", "Backend Dev"]'
+            ></span>
+          </h1>
+          <p class="lead">
+            I specialise in graphics design, UI/UX and photography
+          </p>
+          <a href="work.html" class="btn-light">View My Work</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- typewriter effect -->
+    <script src="./js/typewriter.js"></script>
+  </body>
 </html>

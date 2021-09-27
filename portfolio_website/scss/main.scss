@@ -6,7 +6,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  //   box-sizing: border-box;
 }
 
 body {
@@ -95,9 +95,9 @@ img {
     }
   }
 
-  //header inner
-  &-inner {
-  }
+  //   //header inner
+  //   &-inner {
+  //   }
 }
 
 // home inner {
@@ -162,10 +162,11 @@ img {
         right: 0;
         font-size: 0.9rem;
         background: $main-color;
+        color: set-text-color($main-color);
         border-radius: 50%;
         height: 15px;
         width: 15px;
-        line-height: 10px;
+        line-height: 15px;
         padding: 1rem;
         transition: all 1s;
         // text-align: center;
@@ -175,25 +176,54 @@ img {
         // display: inline-block;
         border-radius: 50%;
         background: $dark-color;
-        color: #fff;
+        color: set-text-color($dark-color);
         padding: 2rem;
-        width: 120px;
-        height: 120px;
-        line-height: 60px;
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
         text-align: center;
         position: relative;
         transition: all 1s;
 
         &:hover {
           background-color: $main-color;
-          width: 150px;
-          height: 150px;
-          line-height: 75px;
+          width: 90px;
+          height: 90px;
+          line-height: 90px;
 
           .process-step {
             background-color: $dark-color;
+            color: set-text-color($dark-color);
           }
         }
+      }
+    }
+  }
+}
+
+// footer
+#main-footer {
+  background-color: $dark-color;
+  color: #fff;
+  height: 5rem;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+
+    .social .fab {
+      margin-right: 1rem;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
+      line-height: 30px;
+      text-align: center;
+
+      &:hover {
+        background: $main-color;
       }
     }
   }

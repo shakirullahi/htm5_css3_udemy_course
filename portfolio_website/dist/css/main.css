@@ -76,8 +76,7 @@ input[class^="btn-"]:hover {
 
 * {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+  padding: 0; }
 
 body {
   font-family: "Dosis", sans-serif;
@@ -176,7 +175,7 @@ img {
     border-radius: 50%;
     height: 15px;
     width: 15px;
-    line-height: 10px;
+    line-height: 15px;
     padding: 1rem;
     transition: all 1s; }
   #home-c .process-icons {
@@ -184,16 +183,36 @@ img {
     background: #333;
     color: #fff;
     padding: 2rem;
-    width: 120px;
-    height: 120px;
-    line-height: 60px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
     text-align: center;
     position: relative;
     transition: all 1s; }
     #home-c .process-icons:hover {
       background-color: #ffbc00;
-      width: 150px;
-      height: 150px;
-      line-height: 75px; }
+      width: 90px;
+      height: 90px;
+      line-height: 90px; }
       #home-c .process-icons:hover .process-step {
         background-color: #333; }
+
+#main-footer {
+  background-color: #333;
+  color: #fff;
+  height: 5rem; }
+  #main-footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem; }
+    #main-footer .footer-content .social .fab {
+      margin-right: 1rem;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
+      line-height: 30px;
+      text-align: center; }
+      #main-footer .footer-content .social .fab:hover {
+        background: #ffbc00; }
